@@ -24,7 +24,8 @@ void Draw_square(Point a, Point b, int type);
 void Draw_area(Point a, Point b);
 void Draw_polygon(Point* p_arr);
 
-/* v1 top */
+/* Sorted */
+void DrawH_flattop_triangle(Point v1, Point v2, Point v3);
 void DrawH_flatbottom_triangle(Point v1, Point v2, Point v3);
 
 void Grphcs_update_DD();

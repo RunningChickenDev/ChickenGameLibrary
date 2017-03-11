@@ -38,7 +38,7 @@ void Draw_polygon(Point* p_arr)
 
 }
 
-void DrawH_flatbottom_triangle(Point v1, Point v2, Point v3)
+void DrawH_flattop_triangle(Point v1, Point v2, Point v3)
 {
 	int scanLine = 0;
 
@@ -55,7 +55,27 @@ void DrawH_flatbottom_triangle(Point v1, Point v2, Point v3)
 		curx2 += slope2;
 	}
 
-	Bdisp_SetPoint_DD(v1.x, v2.x, 1);
+	Bdisp_SetPoint_DD(v1.x, v1.y, 1);
+}
+
+void DrawH_flatbottom_triangle(Point v1, Point v2, Point v3)
+{
+	int scanLine = 0;
+
+		float slope1 = (float) ((float) (v1.x - v2.x)) / ((float) (v1.y - v2.y));	/*Delta x , Delta y*/
+		float slope2 = (float) ((float) (v1.x - v3.x)) / ((float) (v1.y - v3.y));	/*Delta x , Delta y*/
+
+		float curx1 = (float) v3.x;
+		float curx2 = (float) v2.x;
+
+		for(scanLine = v2.y; scanLine > v1.y; scanLine--)
+		{
+			Bdisp_DrawLineVRAM((int) curx1, scanLine, (int) curx2, scanLine);
+			curx1 += slope1;
+			curx2 += slope2;
+		}
+
+		Bdisp_SetPoint_DD(v1.x, v1.y, 1);
 }
 
 void Grphcs_update_DD()
