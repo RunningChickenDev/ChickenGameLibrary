@@ -9,6 +9,7 @@
 #define CHICKENGAME_H_
 
 #include "chickenpoints.h"
+#include "chickengraphics.h"
 
 void doesTheTestWork();
 
