@@ -5,6 +5,7 @@
  *      Author: MisterCavespider
  */
 
+#include <stdlib.h>
 #include <math.h>
 #include "chickenpoints.h"
 
@@ -14,6 +15,16 @@ Point Point_Create(int x, int y) {
 	n.x = x;
 	n.y = y;
 	return n;
+}
+
+int Point_compare_y(const void * a, const void * b)
+{
+	return ( ((Point*)a)->y - ((Point*)b)->y );
+}
+
+void Point_sort_by_y(void* base, int num)
+{
+	qsort(base, num, sizeof(Point), Point_Create);
 }
 
 /*MATH*/

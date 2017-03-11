@@ -28,6 +28,8 @@ void Draw_polygon(Point* p_arr);
 void DrawH_flattop_triangle(Point v1, Point v2, Point v3);
 void DrawH_flatbottom_triangle(Point v1, Point v2, Point v3);
 
+void DrawH_sort_points(Point* points, int size);
+
 void Grphcs_update_DD();
 
 #endif

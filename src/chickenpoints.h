@@ -18,6 +18,7 @@ typedef struct point Point;
 
 /*C (LANG)*/
 Point Point_Create(int x, int y);
+int Point_compare_y(const void * a, const void * b);
 
 /*MATH*/
 /**+**/

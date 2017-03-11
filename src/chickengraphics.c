@@ -21,7 +21,19 @@ void Draw_point(Point p)
 
 void Draw_triangle(Point a, Point b, Point c)
 {
+	if(b.y == c.y)
+	{
+		/* Trivial cases */
+		if(a.y > b.y)
+		{
+			DrawH_flattop_triangle(a, b, c);
+		} else if(a.y < b.y)
+		{
+			DrawH_flatbottom_triangle(a, b, c);
+		}
+	} else {
 
+	}
 }
 
 void Draw_square(Point a, Point b, int type)

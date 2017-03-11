@@ -13,9 +13,20 @@ void print_point(Point p);
 void graphics_test();
 void point_test();
 
-int main(int argc, char **argv) {
+int main(int argc, char **argv)
+{
+	printf("MAIN");
 
-	graphics_test();
+	int i;
+
+	Point values[] = {Point_Create(0,0), Point_Create(0,3), Point_Create(0,2), Point_Create(0,5)};
+
+	Point_sort_by_y(&values, 4);
+
+	for(i = 0; i < 4; i++)
+	{
+		printf("%d", values[i].y);
+	}
 
 	return 0;
 }
