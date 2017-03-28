@@ -1,3 +1,5 @@
+(This is on the branch for the first refactor) 
+
 # ChickenGameLibrary
 A game library made for the CASIO fx-9860 GII calculator.
 Might work on other CASIO calculators as well, like the Prizm.
