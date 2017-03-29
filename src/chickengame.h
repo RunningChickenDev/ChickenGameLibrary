@@ -11,6 +11,16 @@
 #include "chickenpoints.h"
 #include "chickengraphics.h"
 
-void doesTheTestWork();
+extern int frame;
+extern float fps;
+
+void onFrame();
+
+void run();
+
+void start();
+void loop(float tpf);
+void clean();
+
 
 #endif /* CHICKENGAME_H_ */
