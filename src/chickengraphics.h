@@ -36,6 +36,7 @@ void Draw_sprite(Point a, unsigned int *sprite, int xl, int yl);
 void DrawH_flattop_triangle(Point v1, Point v2, Point v3);
 void DrawH_flatbottom_triangle(Point v1, Point v2, Point v3);
 
-void Grphcs_update_DD();
+void Grphcs_update();
+void Grphcs_clr();
 
 #endif

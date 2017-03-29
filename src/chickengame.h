@@ -22,4 +22,6 @@ void loop(float tpf);
 void clean();
 void kill();
 
+void getFrameCount(unsigned int *p);
+
 #endif /* CHICKENGAME_H_ */

@@ -123,7 +123,12 @@ void Draw_sprite(Point a, unsigned int *sprite, int xl, int yl) {
 	}
 }
 
-void Grphcs_update_DD()
+void Grphcs_update()
 {
 	Bdisp_PutDisp_DD();
+}
+
+void Grphcs_clr()
+{
+	Bdisp_AllClr_VRAM();
 }
