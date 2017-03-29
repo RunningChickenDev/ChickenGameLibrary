@@ -19,16 +19,22 @@
 
 void Draw_line(Point a, Point b);
 void Draw_point(Point p);
+void Draw_valpoint(Point p, int val);
 void Draw_triangle(Point a, Point b, Point c);
 void Draw_square(Point a, Point b, int type);
 void Draw_area(Point a, Point b);
 void Draw_polygon(Point* p_arr);
 
+/*
+ * More complicated draws.
+ * Sprites may be structs one day.
+ */
+
+void Draw_sprite(Point a, unsigned int *sprite, int xl, int yl);
+
 /* Sorted */
 void DrawH_flattop_triangle(Point v1, Point v2, Point v3);
 void DrawH_flatbottom_triangle(Point v1, Point v2, Point v3);
-
-void DrawH_sort_points(Point* points, int size);
 
 void Grphcs_update_DD();
 
