@@ -17,10 +17,9 @@ extern float fps;
 void onFrame();
 
 void run();
-
 void start();
 void loop(float tpf);
 void clean();
-
+void kill();
 
 #endif /* CHICKENGAME_H_ */

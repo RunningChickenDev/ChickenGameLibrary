@@ -44,3 +44,8 @@ void run() {
 
 	clean();
 }
+
+void kill()
+{
+	running = 0;
+}
