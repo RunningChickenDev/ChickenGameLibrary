@@ -17,8 +17,8 @@ struct vector {
 typedef struct vector vector_t;
 
 /*C (LANG)*/
-void Vector_create(vector_t *v, int x, int y);
-vector_t Vector_creater(int x, int y);
+void Vector_create(vector_t *v, float x, float y);
+vector_t Vector_creater(float x, float y);
 int Vector_compare_y(const void * a, const void * b);
 
 //MATH

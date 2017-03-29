@@ -10,11 +10,14 @@
 #include "chickencalc.h"
 
 /*C (LANG)*/
-void Vector_create(vector_t *store, int x, int y) {
-	*store = {x,y};
+void Vector_create(vector_t *store, float x, float y) {
+	struct vector v = {0,0};
+	v.x = x;
+	v.y = y;
+	*store = v;
 }
 
-vector_t Vector_creater(int x, int y)
+vector_t Vector_creater(float x, float y)
 {
 	vector_t v;
 	Vector_create(&v,x,y);
@@ -35,7 +38,7 @@ void Vector_sort_by_y(void* base, int num)
 //+
 vector_t Vector_add(vector_t a, vector_t b)
 {
-	return Vector_create(a.x + b.x, a.y + b.y);
+	return Vector_creater(a.x + b.x, a.y + b.y);
 }
 
 void Vector_addLoc(vector_t a, vector_t b) {
@@ -44,8 +47,8 @@ void Vector_addLoc(vector_t a, vector_t b) {
 }
 
 //-
-void Vector_sub(vector_t a, vector_t b) {
-	return Vector_create(a.x - b.x, a.y - b.y);
+vector_t Vector_sub(vector_t a, vector_t b) {
+	return Vector_creater(a.x - b.x, a.y - b.y);
 }
 
 void Vector_subLoc(vector_t a, vector_t b)

@@ -8,6 +8,8 @@
 #ifndef CHIKCENGRAPHICS_H_
 #define CHIKCENGRAPHICS_H_
 
+#include "chickencalc.h"
+
 #define SQUARE_AREA		0
 #define SQUARE_POLYGON	1
 
