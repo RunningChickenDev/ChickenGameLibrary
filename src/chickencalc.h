@@ -5,8 +5,8 @@
  *      Author: MisterCavespider
  */
 
-#ifndef CHICKENPOINTS_H_
-#define CHICKENPOINTS_H_
+#ifndef CHICKENCALC_H_
+#define CHICKENCALC_H_
 
 /*CREATES THE STRUCT*/
 struct vector {

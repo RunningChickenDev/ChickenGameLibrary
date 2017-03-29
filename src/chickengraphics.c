@@ -7,7 +7,7 @@
 
 #include "fxlib.h"
 #include "chickenpoints.h"
-#include "chickengraphics.h"
+#include "chickencalc.h"
 
 void Draw_line(vector_t a, vector_t b)
 {
@@ -41,7 +41,7 @@ void Draw_square(vector_t a, vector_t b, int type)
 		break;
 	case SQUARE_POLYGON:
 		if(a.y > b.y) {
-			DrawH_flattop_triangle(a,b,Vector_creater(a.x, b.y));
+			DrawH_flattop_triangle(a,b,Vector_creater(a.x, b.y)});
 			DrawH_flatbottom_triangle(b,a,Vector_creater(b.x, a.y));
 		} else {
 			DrawH_flattop_triangle(b,a,Vector_creater(b.x,a.y));
@@ -91,7 +91,7 @@ void DrawH_flatbottom_triangle(vector_t v1, vector_t v2, vector_t v3)
 	float curx1 = (float) v2.x;
 	float curx2 = (float) v3.x;
 
-	for(scanLine = v2.y; scanLine > v1.y; scanLine--)
+	for(scanLine = (int)v2.y; scanLine > (int)v1.y; scanLine--)
 	{
 		Bdisp_DrawLineVRAM((int) curx1, scanLine, (int) curx2, scanLine);
 		curx1 -= slope1;

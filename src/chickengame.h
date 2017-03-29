@@ -8,7 +8,7 @@
 #ifndef CHICKENGAME_H_
 #define CHICKENGAME_H_
 
-#include "chickenpoints.h"
+#include "chickencalc.h"
 #include "chickengraphics.h"
 
 extern int frame;
