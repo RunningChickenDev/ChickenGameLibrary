@@ -10,10 +10,10 @@
 #include "fxlib.h"
 
 int frame = 0;
-float fps = 0;
+float fps = 60;
 float tpf = 0;
 
-int running = 0;
+int running = 1;
 int idle = 0;
 
 void calcTpf();
@@ -36,7 +36,7 @@ void run() {
 	{
 		if(idle)
 		{
-			SetTimer(TIMER_ID, (int)(1000/fps), &onFrame);
+			SetTimer(TIMER_ID, (int)(1000/60), &onFrame);
 			calcTpf();
 			loop(tpf);
 		}

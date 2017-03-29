@@ -24,7 +24,7 @@ int Point_compare_y(const void * a, const void * b)
 
 void Point_sort_by_y(void* base, int num)
 {
-	qsort(base, num, sizeof(Point), Point_Create);
+	//qsort(base, num, sizeof(Point), Point_Create);
 }
 
 /*MATH*/
