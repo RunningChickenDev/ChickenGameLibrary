@@ -6,6 +6,21 @@ Because of this, I have to use the Hitachi compiler and C89, what might limit th
 
 Maybe I will later make a version that also gets supported by OpenGL.
 
+## 'Final Features'
+The engine should in the end have the following features:
+- Graphics
+  - Polygons (like in OpenGL)
+  - RAM-friendly sprites
+  - Variable layers for rendering
+- Hardware:
+  - Tools to aid Revolution
+- Game
+  - Gameloop + framecap
+  - Easier input handling
+  - Gamestates & events
+  - Read savefiles
+  - Vectors
+
 ## Notes
 
 - I'm not that good of a C programmer
